@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_icons">
+        <item>@drawable/ic_menu_camera</item>
+        <item>@drawable/ic_menu_chart</item>
+        <item>@drawable/ic_menu_3d</item>
+        <item>@drawable/ic_menu_image</item>
+        <item>@drawable/ic_menu_play</item>
+        <item>@drawable/ic_menu_gps</item>
+    </string-array>
+
+    <array name="navigation_descriptions">
+        <item>Use the device camera to take and save a picture</item>
+        <item>Show an interactive bar graph</item>
+        <item>A rotating 3D cube controlled by the accelerometer of the device</item>
+        <item>An interactive image viewer supporting pan and pinch</item>
+        <item>Animate item positions, sizes and colors</item>
+        <item>List all device sensors and acquire sensor data in native code</item>
+    </array>
+</resources>

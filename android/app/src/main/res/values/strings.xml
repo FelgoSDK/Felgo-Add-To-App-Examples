@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">NativeIntegrationExamples</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Felgo SDK</string>
+    <string name="nav_header_subtitle">Native Integration Examples</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_chartview">Chart view</string>
+    <string name="menu_3d">3D view</string>
+    <string name="menu_image_view">Image viewer</string>
+    <string name="menu_animations">Animations</string>
+    <string name="menu_sensors">Sensors</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="capture_picture">Capture new profile picture</string>
+    <string name="capture_success">Profile picture saved.</string>
+    <string name="remove_bar">Remove bar</string>
+    <string name="updates_enabled">Updates enabled</string>
+    <string name="updates_disabled">Updates disabled</string>
+    <string name="add_bar">Add bar</string>
+    <string name="remove_entry">Remove entry</string>
+    <string name="add_entry">Add entry</string>
+    <string name="reset_transform">Reset transform</string>
+    <string name="pick_image">Pick image</string>
+    <string name="add_item">Create item</string>
+    <string name="clear_items">Clear items</string>
+    <string name="animate_items">Shuffle items</string>
+    <string name="home_title">Felgo QML view below:</string>
+</resources>

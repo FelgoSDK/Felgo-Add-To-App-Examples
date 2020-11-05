@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_camera" />
+        <item
+            android:id="@+id/nav_chartview"
+            android:icon="@drawable/ic_menu_chart"
+            android:title="@string/menu_chartview" />
+        <item
+            android:id="@+id/nav_3d"
+            android:icon="@drawable/ic_menu_3d"
+            android:title="@string/menu_3d" />
+        <item
+            android:id="@+id/nav_image_view"
+            android:icon="@drawable/ic_menu_image"
+            android:title="@string/menu_image_view" />
+        <item
+            android:id="@+id/nav_animations"
+            android:icon="@drawable/ic_menu_play"
+            android:title="@string/menu_animations" />
+        <item
+            android:id="@+id/nav_sensors"
+            android:icon="@drawable/ic_menu_gps"
+            android:title="@string/menu_sensors" />
+    </group>
+</menu>

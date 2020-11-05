@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.felgo.demos.NativeIntegrationExamples.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="com.felgo.demos.NativeIntegrationExamples.ui.camera.CameraFragment"
+        android:label="@string/menu_camera"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/nav_chartview"
+        android:name="com.felgo.demos.NativeIntegrationExamples.ui.chartview.ChartViewFragment"
+        android:label="@string/menu_chartview"
+        tools:layout="@layout/fragment_chartview" />
+
+    <fragment
+        android:id="@+id/nav_3d"
+        android:name="com.felgo.demos.NativeIntegrationExamples.ui.cube3d.Cube3dFragment"
+        android:label="@string/menu_3d"
+        tools:layout="@layout/fragment_3d" />
+
+    <fragment
+        android:id="@+id/nav_image_view"
+        android:name="com.felgo.demos.NativeIntegrationExamples.ui.imageview.ImageViewerFragment"
+        android:label="@string/menu_image_view"
+        tools:layout="@layout/fragment_image_viewer" />
+
+    <fragment
+        android:id="@+id/nav_animations"
+        android:name="com.felgo.demos.NativeIntegrationExamples.ui.animation.AnimationFragment"
+        android:label="@string/menu_animations"
+        tools:layout="@layout/fragment_animations" />
+
+    <fragment
+        android:id="@+id/nav_sensors"
+        android:name="com.felgo.demos.NativeIntegrationExamples.ui.sensors.SensorsFragment"
+        android:label="@string/menu_sensors"
+        tools:layout="@layout/fragment_sensors" />
+</navigation>
