@@ -18,6 +18,7 @@ import com.felgo.demos.NativeIntegrationExamples.R;
 import com.felgo.ui.FelgoAndroidFragment;
 
 import org.apache.commons.io.IOUtils;
+import org.qtproject.qt5.android.bindings.QmlInitializedListener;
 import org.qtproject.qt5.android.bindings.QtFragment;
 
 import java.io.File;
@@ -39,7 +40,7 @@ public class ImageViewerFragment extends Fragment {
     m_felgo = (FelgoAndroidFragment) getChildFragmentManager().findFragmentById(R.id.qt_fragment_container);
     m_urlText = root.findViewById(R.id.input_url);
 
-    m_felgo.setQmlInitializedListener(new QtFragment.QmlInitializedListener() {
+    m_felgo.setQmlInitializedListener(new QmlInitializedListener() {
       @Override
       public void onQmlInitialized() {
         getActivity().runOnUiThread(new Runnable() {

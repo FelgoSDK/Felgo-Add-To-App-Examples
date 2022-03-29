@@ -46,4 +46,10 @@
         android:name="com.felgo.demos.NativeIntegrationExamples.ui.sensors.SensorsFragment"
         android:label="@string/menu_sensors"
         tools:layout="@layout/fragment_sensors" />
+
+    <fragment
+        android:id="@+id/nav_grid_view"
+        android:name="com.felgo.demos.NativeIntegrationExamples.ui.gridview.GridViewFragment"
+        android:label="@string/menu_grid_view"
+        tools:layout="@layout/fragment_grid_view" />
 </navigation>

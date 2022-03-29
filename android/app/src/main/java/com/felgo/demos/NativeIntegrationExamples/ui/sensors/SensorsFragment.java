@@ -13,6 +13,8 @@ import androidx.fragment.app.FragmentActivity;
 import com.felgo.demos.NativeIntegrationExamples.R;
 import com.felgo.ui.FelgoAndroidFragment;
 
+import org.qtproject.qt5.android.bindings.QmlInitializedListener;
+import org.qtproject.qt5.android.bindings.QmlSignalHandler;
 import org.qtproject.qt5.android.bindings.QtFragment;
 
 import java.util.Map;
@@ -31,10 +33,10 @@ public class SensorsFragment extends Fragment {
 
     m_felgo = (FelgoAndroidFragment) getChildFragmentManager().findFragmentById(R.id.qt_fragment_container);
 
-    m_felgo.setQmlInitializedListener(new QtFragment.QmlInitializedListener() {
+    m_felgo.setQmlInitializedListener(new QmlInitializedListener() {
       @Override
       public void onQmlInitialized() {
-        m_felgo.addSignalHandler("onCurrentReadingChanged", new QtFragment.QmlSignalHandler() {
+        m_felgo.addSignalHandler("onCurrentReadingChanged", new QmlSignalHandler() {
           @Override
           public void onSignalEmitted(Object[] objects) {
             updateSensorText(sensorText);

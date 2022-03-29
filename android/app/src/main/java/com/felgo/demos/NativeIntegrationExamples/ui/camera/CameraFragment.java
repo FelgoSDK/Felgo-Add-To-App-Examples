@@ -13,6 +13,8 @@ import com.felgo.demos.NativeIntegrationExamples.R;
 import com.felgo.ui.FelgoAndroidFragment;
 import com.google.android.material.snackbar.Snackbar;
 
+import org.qtproject.qt5.android.bindings.QmlInitializedListener;
+import org.qtproject.qt5.android.bindings.QmlSignalHandler;
 import org.qtproject.qt5.android.bindings.QtFragment;
 
 import java.io.IOException;
@@ -80,7 +82,7 @@ public class CameraFragment extends Fragment {
       m_startBtn.setVisibility(View.GONE);
 
       // can only interact with QML after it was initialized:
-      felgo.setQmlInitializedListener(new QtFragment.QmlInitializedListener() {
+      felgo.setQmlInitializedListener(new QmlInitializedListener() {
         @Override public void onQmlInitialized() {
           felgo.addSignalHandler("imageCaptured", m_imageCapturedListener);
         }
@@ -90,7 +92,7 @@ public class CameraFragment extends Fragment {
     }
   }
 
-  private QtFragment.QmlSignalHandler m_imageCapturedListener = new QtFragment.QmlSignalHandler() {
+  private QmlSignalHandler m_imageCapturedListener = new QmlSignalHandler() {
     @Override public void onSignalEmitted(Object[] params) {
       final String imageUrl = (String) params[0];
 

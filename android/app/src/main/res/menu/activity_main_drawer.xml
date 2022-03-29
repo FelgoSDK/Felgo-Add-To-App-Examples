@@ -32,5 +32,9 @@
             android:id="@+id/nav_sensors"
             android:icon="@drawable/ic_menu_gps"
             android:title="@string/menu_sensors" />
+        <item
+            android:id="@+id/nav_grid_view"
+            android:icon="@drawable/ic_menu_grid"
+            android:title="@string/menu_grid_view" />
     </group>
 </menu>

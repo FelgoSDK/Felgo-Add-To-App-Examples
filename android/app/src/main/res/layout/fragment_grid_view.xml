@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="2"
+    app:rowCount="2"
+    app:orientation="vertical"
+    tools:context=".ui.camera.CameraFragment">
+
+    <com.felgo.ui.FelgoAndroidView
+        android:id="@+id/felgo_view_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:qml_source="qml/GridTile.qml" />
+
+    <com.felgo.ui.FelgoAndroidView
+        android:id="@+id/felgo_view_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:qml_source="qml/GridTile.qml" />
+
+    <com.felgo.ui.FelgoAndroidView
+        android:id="@+id/felgo_view_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:qml_source="qml/GridTile.qml" />
+
+    <com.felgo.ui.FelgoAndroidView
+        android:id="@+id/felgo_view_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:qml_source="qml/GridTile.qml" />
+
+</androidx.gridlayout.widget.GridLayout>

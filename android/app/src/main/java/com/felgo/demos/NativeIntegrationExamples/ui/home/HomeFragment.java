@@ -30,10 +30,13 @@ public class HomeFragment extends Fragment {
 
   public View onCreateView(@NonNull LayoutInflater inflater,
                            ViewGroup container, Bundle savedInstanceState) {
+    return inflater.inflate(R.layout.fragment_home, container, false);
+  }
 
-    final View root = inflater.inflate(R.layout.fragment_home, container, false);
+  @Override public void onStart() {
+    super.onStart();
 
-    ListView m_list = root.findViewById(android.R.id.list);
+    ListView m_list = getView().findViewById(android.R.id.list);
 
     // use the NavController to list the other fragments and handle navigation
     m_navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
@@ -43,7 +46,7 @@ public class HomeFragment extends Fragment {
     List<NavDestination> entries = new ArrayList<>();
     int[] navigationEntries = {
         R.id.nav_camera, R.id.nav_chartview, R.id.nav_3d,
-        R.id.nav_image_view, R.id.nav_animations, R.id.nav_sensors
+        R.id.nav_image_view, R.id.nav_animations, R.id.nav_sensors, R.id.nav_grid_view
     };
 
     for (int destId : navigationEntries) {
@@ -51,8 +54,6 @@ public class HomeFragment extends Fragment {
     }
 
     m_list.setAdapter(new NavDestinationArrayAdapter(entries));
-
-    return root;
   }
 
   private class NavDestinationArrayAdapter extends ArrayAdapter<NavDestination> {

@@ -14,6 +14,7 @@
     <string name="menu_image_view">Image viewer</string>
     <string name="menu_animations">Animations</string>
     <string name="menu_sensors">Sensors</string>
+    <string name="menu_grid_view">Grid View</string>
 
     <string name="home_second">Home Second</string>
     <string name="capture_picture">Capture new profile picture</string>

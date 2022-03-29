@@ -46,7 +46,7 @@ public class MainActivity extends FelgoAndroidActivity {
     // Set up navigation framework
     m_appBarConfiguration = new AppBarConfiguration.Builder(
         R.id.nav_home, R.id.nav_camera, R.id.nav_chartview, R.id.nav_3d,
-        R.id.nav_image_view, R.id.nav_animations, R.id.nav_sensors
+        R.id.nav_image_view, R.id.nav_animations, R.id.nav_sensors, R.id.nav_grid_view
     )
         .setDrawerLayout(m_drawer)
         .build();
